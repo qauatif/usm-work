@@ -15,7 +15,9 @@ public class ProjectController {
 
 	@GetMapping
 	public String createProject() {
+		
 		log.info("project created at: {}", LocalDateTime.now());
+		
 		return "created";
 	}
 }
